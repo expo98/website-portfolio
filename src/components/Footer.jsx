@@ -3,7 +3,7 @@ export const Footer = () => {
     return( <nav className=" w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-t border-white-10 shadow-lg">
         <div className="max-w-5xl mx-auto px-4">
             <div className="flex justify-between items-center h-16">
-                <a className="font-mono text-medium font-bold text-gray-300">
+                <a href="https://github.com/expo98/website-portfolio" className="font-mono text-medium font-bold text-gray-300">
                     License 🄯 2025 Miguel Pereira
                 </a>
 
