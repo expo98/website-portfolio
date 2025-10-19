@@ -8,7 +8,7 @@ export const Footer = () => {
                 </a>
 
 
-                <div className="hidden md:flex items-center space-x-8">
+                <div className="md:flex items-center space-x-8">
                     <a href="https://www.x.com/migueltmpereira" className="text-gray-300 hove:text-white transition-colors"> 
                         Twitter
                     </a>
