@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { useState, useRef } from "react"; // Added useRef
+import { useState, useRef } from "react"; 
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
@@ -9,7 +9,7 @@ export const Contact = () => {
         message: ""
     });
 
-    const formRef = useRef(); // Added form reference
+    const formRef = useRef(); 
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,7 +18,7 @@ export const Contact = () => {
             .sendForm(
                 import.meta.env.VITE_SERVICE_ID, 
                 import.meta.env.VITE_TEMPLATE_ID, 
-                formRef.current, // Pass the form element
+                formRef.current, 
                 import.meta.env.VITE_PUBLIC_KEY
             )
             .then((result) => {
@@ -38,16 +38,16 @@ export const Contact = () => {
     return (
         <section
             id="contact"
-            className="min-h-screen flex items-center justify-center py-20"
+            className="min-h-screen flex items-center justify-center py-20 "
         >
             <RevealOnScroll>
-                <div className="px-4 w-150">
+                <div className="max-w-5xl mx-auto w-100 px-4">
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
                         Get In Touch
                     </h2>
                     
                     <form
-                        ref={formRef} // Added form reference
+                        ref={formRef}
                         className="space-y-6" 
                         onSubmit={handleSubmit}
                     >
@@ -61,7 +61,7 @@ export const Contact = () => {
                                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 
                                 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                                 placeholder="Name..."
-                                onChange={handleChange} // Fixed: using correct handler
+                                onChange={handleChange} 
                             />
                         </div>
 
@@ -75,7 +75,7 @@ export const Contact = () => {
                                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 
                                 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                                 placeholder="example@mail.com"
-                                onChange={handleChange} // Fixed: using correct handler           
+                                onChange={handleChange}          
                             />
                         </div>
 
@@ -89,7 +89,7 @@ export const Contact = () => {
                                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 
                                 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                                 placeholder="Your Message..."
-                                onChange={handleChange} // Fixed: using correct handler
+                                onChange={handleChange} 
                             />
                         </div>
 
